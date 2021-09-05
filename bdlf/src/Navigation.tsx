@@ -8,12 +8,16 @@ import ApplyAdmin from './Admin Apply/ApplyAdmin';
 import AdminDashboardFile from './Admin Dashboard/AdminDashboardFile';
 import TabExampleVerticalTabular from './Admin Dashboard/TabVeritcal';
 import UserCard from './Admin Dashboard/UserCard';
+import Profile from './Profile Dashboard/Profile';
+import HomePage from './HomePage/HomePage';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 function Navigation() {
     return (
         <Router>
             <Switch>
+                 <Route path='/homepage' component={HomePage}/>
+                <Route path='/profile' component={Profile}/>
                 <Route path='/usercard' component={UserCard}/>
                 <Route path='/app' component={App} />
                 <Route path='/signupbdlf' component={SignUp} />

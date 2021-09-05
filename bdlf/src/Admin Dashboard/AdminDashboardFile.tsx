@@ -1,6 +1,6 @@
 
 import React from "react";
-import { Tab, Container, Header, Form } from "semantic-ui-react";
+import { Tab, Container, Header, Form,Card,Image,Button } from "semantic-ui-react";
 import UserCard from "./UserCard";
 
 export default function AdminDashboardFile(this: any) {
@@ -10,7 +10,7 @@ export default function AdminDashboardFile(this: any) {
             menuItem: 'New Users List', render: () => <Tab.Pane className="sizeoftabs">
                 <UserCard></UserCard>
 
-                <svg width="923" height="869" viewBox="0 0 923 869" fill="none" xmlns="http://www.w3.org/2000/svg" className="absolute svgproperties">
+                {/* <svg width="923" height="869" viewBox="0 0 923 869" fill="none" xmlns="http://www.w3.org/2000/svg" className="absolute svgproperties">
                     <g filter="url(#filter0_f)">
                         <ellipse cx="407.5" cy="434.5" rx="401.5" ry="336.5" fill="#8A55CD" fill-opacity="0.2" />
                     </g>
@@ -53,15 +53,81 @@ export default function AdminDashboardFile(this: any) {
                             <feGaussianBlur stdDeviation="3" result="effect1_foregroundBlur" />
                         </filter>
                     </defs>
-                </svg>
+                </svg> */}
 
                 <div>
 
                 </div>
             </Tab.Pane>
         },
-        { menuItem: 'Admin Lists', render: () => <Tab.Pane className="sizeoftabs">Tab 2 Content</Tab.Pane> },
-        { menuItem: 'Waiting for Acceptance', render: () => <Tab.Pane className="sizeoftabs">Tab 2 Content</Tab.Pane> },
+        { menuItem: 'Admin Lists', render: () => <Tab.Pane className="sizeoftabs">
+
+
+
+
+
+        </Tab.Pane> },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        { menuItem: 'Waiting for Acceptance', render: () => <Tab.Pane className="sizeoftabs">
+
+<Card.Group>
+    <Card>
+      <Card.Content>
+        <Image
+          floated='right'
+          size='mini'
+          src='https://react.semantic-ui.com/images/avatar/large/steve.jpg'
+        />
+        <Card.Header>Steve Sanders</Card.Header>
+        <Card.Meta>Friends of Elliot</Card.Meta>
+        <Card.Description>
+          Steve wants to add you to the group <strong>best friends</strong>
+        </Card.Description>
+      </Card.Content>
+      <Card.Content extra>
+        <div className='ui two buttons'>
+          <Button basic color='green'>
+            Approve
+          </Button>
+          <Button basic color='red'>
+            Decline
+          </Button>
+        </div>
+      </Card.Content>
+    </Card>
+   
+   
+  </Card.Group>
+
+
+
+
+
+
+
+        </Tab.Pane> },
 
 
 
